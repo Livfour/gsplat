@@ -1281,7 +1281,7 @@ def rasterization_2dgs(
 
         render_normals_from_depth = depth_to_normal(
             depth_for_normal, torch.linalg.inv(viewmats), Ks
-        ).squeeze(0)
+        )
 
     meta = {
         "camera_ids": camera_ids,
